@@ -1,0 +1,6 @@
+{
+  "name": "Dashboard Penjualan",
+  "description": "Dashboard analisis data penjualan interaktif yang terhubung langsung dengan Google Sheets menggunakan Google Apps Script.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
