@@ -257,7 +257,7 @@ const products: ProductMeta[] = [
   { name: "Mie Instan", category: "Retail", basePrice: 19000 }
 ];
 
-// Generate an additional 135 rows deterministically to make 150 total records
+// Generate an additional 1000 rows deterministically to make 1015 total records
 function generateMockRecords(): SaleRecord[] {
   const records = [...screenshotRecords];
   let currentId = 16;
@@ -266,9 +266,9 @@ function generateMockRecords(): SaleRecord[] {
   const startDate = new Date("2024-01-01").getTime();
   const endDate = new Date("2025-06-30").getTime();
 
-  for (let i = 0; i < 135; i++) {
+  for (let i = 0; i < 1000; i++) {
     // Generate dates spread across the range
-    const progress = i / 135;
+    const progress = i / 1000;
     const randomTime = startDate + progress * (endDate - startDate) + (Math.sin(i) * 5 * 24 * 60 * 60 * 1000);
     const dateObj = new Date(Math.max(startDate, Math.min(endDate, randomTime)));
     const yyyy = dateObj.getFullYear();
